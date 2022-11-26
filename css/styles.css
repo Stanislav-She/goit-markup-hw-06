@@ -632,12 +632,14 @@ img {
   line-height: calc(20 / 16);
   letter-spacing: 0.03em;
   outline: transparent;
+  cursor: pointer;
 }
 
 .footer-subscription-button {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
   gap: 10px;
   width: 200px;
   background: var(--brand-color);
@@ -765,6 +767,7 @@ img {
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.01em;
+  cursor: pointer;
   outline: transparent;
   transition: border var(--transition);
 }
@@ -801,6 +804,7 @@ img {
   font-size: 12px;
   line-height: calc(14 / 12);
   letter-spacing: 0.01em;
+  cursor: pointer;
   outline: transparent;
   transition: border var(--transition);
 }
@@ -820,6 +824,7 @@ img {
   align-items: center;
   user-select: none;
   margin-bottom: 30px;
+  cursor: pointer;
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
