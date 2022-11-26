@@ -565,6 +565,10 @@ img {
   padding-bottom: 9px;
 }
 
+.footer-socnet-studio {
+  margin-right: 93px;
+}
+
 .footer-soctitle-studio {
   font-family: "Roboto";
   font-size: 14px;
@@ -601,10 +605,59 @@ img {
   transition: var(--transition);
 }
 
+.footer-subscription-title {
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--brand-color-three);
+}
+
 .footer-subscription-line {
   display: flex;
   justify-content: center;
   gap: 12px;
+}
+
+.footer-subscription-mail {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  width: 358px;
+  padding: 15px 0px 15px 16px;
+  color: rgba(255, 255, 255, 0.6);
+  background: #2f303a;
+  font-weight: 400;
+  line-height: calc(20 / 16);
+  letter-spacing: 0.03em;
+  outline: transparent;
+}
+
+.footer-subscription-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 200px;
+  background: var(--brand-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  font-weight: 700;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.06em;
+  color: var(--brand-color-three);
+}
+
+.footer-subscription-button:hover,
+.footer-subscription-button:focus {
+  transition: var(--transition);
+  background: var(--color-studio-btn);
+}
+
+.footer-subscription-icon {
+  fill: var(--brand-color-three);
 }
 
 /* --- FOOTER --- */
@@ -1165,6 +1218,10 @@ img {
 
 .contacts-mail-portfolio {
   margin-bottom: 9px;
+}
+
+.footer-socnet-portfolio {
+  margin-right: 93px;
 }
 
 .footer-soctitle-portfolio {
