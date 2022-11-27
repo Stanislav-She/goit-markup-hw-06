@@ -192,7 +192,6 @@ img {
   height: 16px;
   margin-right: 10px;
   fill: currentColor;
-  transition: color var(--transition);
 }
 
 .contacts-studio :hover,
@@ -595,6 +594,7 @@ img {
   height: 100%;
   width: 100%;
   border-radius: 50%;
+  color: var(--brand-color-three);
   background-color: var(--footer-socnet-color);
   transition: background-color var(--transition);
 }
@@ -1247,15 +1247,4 @@ img {
 .team-footsocnet-list {
   width: 44px;
   height: 44px;
-}
-
-.team-footsocnet-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  width: 100%;
-  border-radius: 50%;
-  color: var(--brand-color-three);
-  background-color: var(--footer-socnet-color);
 }
