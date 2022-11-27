@@ -14,7 +14,7 @@
   --footer-socnet-color: rgba(255, 255, 255, 0.1);
   --btn-shadow-portfolio: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  --transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -154,7 +154,7 @@ img {
   padding-bottom: 32px;
   letter-spacing: 0.02em;
   color: var(--brand-color-five);
-  transition: var(--transition);
+  transition: color var(--transition);
 }
 
 /* .link.current зазначив поточну сторінку і так на кожній наступній поточній */
@@ -185,19 +185,19 @@ img {
   color: var(--brand-color-two);
   padding-top: 32px;
   padding-bottom: 32px;
-  transition: var(--transition);
-}
-
-.contacts-studio :hover,
-.contacts-studio :focus {
-  color: var(--brand-color);
+  transition: color var(--transition);
 }
 
 .contacts-icon {
   height: 16px;
   margin-right: 10px;
   fill: currentColor;
-  transition: var(--transition);
+  transition: color var(--transition);
+}
+
+.contacts-studio :hover,
+.contacts-studio :focus {
+  color: var(--brand-color);
 }
 
 /* --------------- HEDER -------------- */
@@ -247,7 +247,7 @@ img {
   font-weight: 700;
   line-height: 1.9;
   cursor: pointer;
-  transition: var(--transition);
+  transition: background-color var(--transition);
 }
 
 .solutions-button-studio:hover,
@@ -429,7 +429,7 @@ img {
   width: 100%;
   border-radius: 50%;
   color: var(--brand-color-nine);
-  transition: var(--transition);
+  transition: all var(--transition);
 }
 
 .team-socnet-link:hover,
@@ -469,15 +469,13 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1;
   border: 1px solid;
   border-radius: 4px;
   width: 170px;
   height: 92px;
-  padding: 16px 32px;
   color: var(--brand-color-nine);
   outline: transparent;
-  transition: var(--transition);
+  transition: color var(--transition);
 }
 
 .icon-company-studio:hover,
@@ -559,7 +557,7 @@ img {
 
 .contacts-footer-studio .link-studio {
   color: var(--footer-address-color);
-  transition: var(--transition);
+  transition: color var(--transition);
 }
 
 .contacts-mail-studio {
@@ -598,7 +596,7 @@ img {
   width: 100%;
   border-radius: 50%;
   background-color: var(--footer-socnet-color);
-  transition: var(--transition);
+  transition: background-color var(--transition);
 }
 
 .team-footsocnet-link:hover,
@@ -633,8 +631,7 @@ img {
   line-height: calc(20 / 16);
   letter-spacing: 0.03em;
   outline: transparent;
-  cursor: pointer;
-  transition: var(--transition);
+  transition: border var(--transition);
 }
 
 .footer-subscription-mail:hover,
@@ -657,7 +654,7 @@ img {
   line-height: calc(30 / 16);
   letter-spacing: 0.06em;
   color: var(--brand-color-three);
-  transition: var(--transition);
+  transition: background-color var(--transition);
 }
 
 .footer-subscription-button:hover,
@@ -728,7 +725,7 @@ img {
 
 .modal-close-icon {
   fill: currentColor;
-  transition: var(--transition);
+  transition: fill var(--transition);
 }
 
 .modal-button-close:hover .modal-close-icon,
@@ -775,28 +772,27 @@ img {
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.01em;
-  cursor: pointer;
   outline: transparent;
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border var(--transition);
 }
 
 .modal-form-icon {
   fill: currentColor;
   position: absolute;
   pointer-events: none;
-
   bottom: 11px;
   left: 12px;
   border: none;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill var(--transition);
 }
 
-.modal-form-input:focus + .modal-form-icon {
+.modal-form-input:focus + .modal-form-icon,
+.modal-form-input:hover + .modal-form-icon {
   fill: var(--brand-color);
 }
 
 .modal-form-input:focus,
-.modal-form-textarea:focus {
+.modal-form-input:hover {
   border-color: var(--brand-color);
 }
 
@@ -812,9 +808,13 @@ img {
   font-size: 12px;
   line-height: calc(14 / 12);
   letter-spacing: 0.01em;
-  cursor: pointer;
   outline: transparent;
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border var(--transition);
+}
+
+.modal-form-textarea:focus,
+.modal-form-textarea:hover {
+  border-color: var(--brand-color);
 }
 
 .modal-form-textarea::placeholder {
@@ -857,8 +857,7 @@ img {
   margin-right: 7px;
   outline: none;
   border: 2px solid var(--brand-color-five);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color var(--transition), border var(--transition);
 }
 
 .modal-check-frame:focus {
@@ -885,7 +884,7 @@ img {
   cursor: pointer;
   border-radius: 4px;
   border: none;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color var(--transition);
 }
 
 .modal-submit-button:hover,
@@ -992,7 +991,7 @@ img {
   letter-spacing: 0.02em;
   padding-top: 32px;
   padding-bottom: 32px;
-  transition: var(--transition);
+  transition: color var(--transition);
 }
 
 /* .link.current зазначив поточну сторінку і так на кожній наступній поточній */
@@ -1013,7 +1012,7 @@ img {
   letter-spacing: 0.02em;
   display: flex;
   margin-left: auto;
-  transition: var(--transition);
+  transition: color var(--transition);
 }
 
 .contacts-list-portfolio:not(:last-child) {
@@ -1046,7 +1045,7 @@ img {
 
 .btn-one-portfolio {
   box-shadow: var(--color-portfolio);
-  transition: var(--transition);
+  transition: all var(--transition);
 }
 
 .btn-list {
@@ -1058,7 +1057,7 @@ img {
   color: var(--brand-color-five);
   cursor: pointer;
   border: none;
-  transition: var(--transition);
+  transition: all var(--transition);
 }
 
 .main-botton-portfolio .link.current {
@@ -1095,7 +1094,7 @@ img {
 .work-link-portfolio {
   display: block;
   outline: none;
-  transition: var(--transition);
+  transition: box-shadow var(--transition);
 }
 
 .work-cover-portfolio {
@@ -1114,7 +1113,7 @@ img {
   height: 100%;
   transform: translateY(101%);
   background: rgba(33, 150, 243, 0.9);
-  transition: var(--transition);
+  transition: transform var(--transition);
 }
 
 .work-text-portfolio {
@@ -1202,7 +1201,7 @@ img {
 }
 
 .link-portfolio {
-  transition: var(--transition);
+  transition: color var(--transition);
 }
 
 .address-portfolio .contacts-footer-portfolio :hover,
