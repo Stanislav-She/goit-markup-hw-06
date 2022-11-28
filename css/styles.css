@@ -508,6 +508,7 @@ img {
 
 .footer-contacts-studio {
   margin-right: 70px;
+  width: 231px;
 }
 
 .logo-link-footer-studio {
@@ -564,7 +565,7 @@ img {
 }
 
 .footer-socnet-studio {
-  margin-right: 93px;
+  margin-right: auto;
 }
 
 .footer-soctitle-studio {
@@ -1173,6 +1174,7 @@ img {
 
 .footer-contacts-portfolio {
   margin-right: 70px;
+  width: 231px;
 }
 
 .logo-link-footer-portfolio {
@@ -1232,7 +1234,7 @@ img {
 }
 
 .footer-socnet-portfolio {
-  margin-right: 93px;
+  margin-right: auto;
 }
 
 .footer-soctitle-portfolio {
